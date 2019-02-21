@@ -3,7 +3,7 @@
 export class Car {
 
 
-  constructor(public _id: number, private _name: string, private _fileId: string, private _classId: number){
+  constructor(private _id: number, private _name: string, private _fileId: string, private _classId: number){
 
   }
 
@@ -53,7 +53,7 @@ export class Cars{
 
   public static getCar = (id: number): Car => {
     //return Cars.list.filter((car: Car) => car._id === id);
-    return Cars.list.find((car: Car) => car._id === id);
+    return Cars.list.find((car: Car) => car.id === id);
   }
 
 }
