@@ -24,8 +24,6 @@ export class Car {
   }
 
 
-
-
 }
 
 
@@ -51,7 +49,7 @@ export class Cars{
     return Cars.list;
   }
 
-  public static getCar = (id: number): Car => {
+  public static getCar = (id: number): Car | undefined => {
     //return Cars.list.filter((car: Car) => car._id === id);
     return Cars.list.find((car: Car) => car.id === id);
   }
@@ -60,7 +58,7 @@ export class Cars{
 
 //console.log(new Cars().cars());
 Cars.constructCars();
-console.log(Cars.getCar(100).name);
+//console.log(Cars.getCar(100).name);
 console.log(Cars.cars1());
 
 
