@@ -7,6 +7,12 @@ import {Results, ResultsEntry} from "./results";
 import {Car} from "./cars";
 import {Driver} from "./driver";
 
+//import Amplify from 'aws-amplify';
+//import aws_exports from './aws-exports';
+
+//Amplify.configure(aws_exports);
+
+
 @NgModule({
   declarations: [
     AppComponent
